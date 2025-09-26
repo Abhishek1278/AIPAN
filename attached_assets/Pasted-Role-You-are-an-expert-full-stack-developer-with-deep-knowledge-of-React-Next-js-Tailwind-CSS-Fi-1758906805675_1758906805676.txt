@@ -1,0 +1,88 @@
+Role: You are an expert full-stack developer with deep knowledge of React, Next.js, Tailwind CSS, Firebase, and E-commerce development.
+
+Task: Build a responsive e-commerce website for selling traditional Aipan arts items like thaalis, loataas, diyaas, and other crafts.
+
+Requirements
+
+Frontend:
+
+Framework: Next.js + Tailwind CSS.
+
+Pages:
+
+Homepage → Hero section with Aipan cultural feel (red & white theme), product grid.
+
+Category Pages → Filter products (Thaalis, Loataas, Diyaas).
+
+Product Detail Page → Show product image (base64), price, description, Add to Cart button.
+
+Cart & Checkout Page → Add/remove items, show total, place order.
+
+Order Confirmation Page.
+
+Backend (Firebase):
+
+Firebase Authentication (Google + Email/Password).
+
+Firestore Database:
+
+Products Collection:
+
+{
+  "name": "Aipan Thaali",
+  "price": 499,
+  "category": "thaali",
+  "description": "Hand-painted traditional Aipan thaali",
+  "imageBase64": "data:image/png;base64,...",
+  "stock": 10
+}
+
+
+Orders Collection:
+
+{
+  "userId": "uid123",
+  "items": [
+    {"productId": "p1", "quantity": 2, "price": 499}
+  ],
+  "total": 998,
+  "status": "pending",
+  "timestamp": "2025-09-26T12:00:00Z"
+}
+
+
+Admin Dashboard:
+
+Admin can add/edit products with base64 image upload (file → convert → base64).
+
+View/manage orders (change status → pending/shipped/delivered).
+
+Features:
+
+Cart functionality with persistent state.
+
+Secure checkout flow (simulate order placement, no real payments).
+
+Search & filter products by category.
+
+Base64 images must load efficiently on frontend.
+
+Mobile responsive design.
+
+Extra:
+
+Deployable on Vercel with Firebase backend.
+
+Provide Firebase setup guide (config, Firestore rules).
+
+Provide code snippet for file-to-base64 conversion while uploading products.
+
+Ensure CRUD operations (Products + Orders) are fully functional.
+
+Output:
+
+Provide the complete codebase with proper folder structure.
+
+Include setup instructions (env variables, Firebase config, Firestore rules).
+
+Ensure imageBase64 works properly for products.
